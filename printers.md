@@ -1,4 +1,4 @@
-### Managing printers
+# Managing printers
 In Linux, printers are primary managed by a software stack called CUPS. CUPS: Common Unix Printing System; is an open-source printing system designed for Linux and Unix-based operating systems. It provides a framework for managing and controlling printers, allowing users to print documents and images to various devices. CUPS is widely used on many Linux distributions and has become the standard print manager on most popular Linux distros.
 
 ## cups installation
@@ -18,7 +18,7 @@ To enable cups to always start on boot
 ```sh
 systemctl enable cups
 ```
-### printer configuration using lpadmin
+# printer configuration using lpadmin
 syntax
 ```sh
 lpadmin [options] [destination] [options]
