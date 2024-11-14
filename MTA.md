@@ -63,6 +63,10 @@ This will delete all messages from the queue. To delete a specific message, use:
 ```sh
 postsuper -d <mail_id>
 ```
+to view messages in queue use the postcat
+```sh
+postcat [options] [files...]
+```
 important protocols
 
 SMTP (Simple Mail Transfer Protocol)
