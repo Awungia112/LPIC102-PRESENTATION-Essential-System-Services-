@@ -82,10 +82,13 @@ First you disable the ntp
 timedatectl set-ntp no
 ```
 ```sh
-timedatectl 
+timedatectl list-timezones
 ```
 ```sh
 timedatectl set-timezone Africa/Douala
+```
+```sh
+timedatectl
 ```
 
 The ```/usr/share/zoneinfo``` directory contains information for the different time zones that are possible.
