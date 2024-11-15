@@ -186,7 +186,7 @@ The file /etc/ntp.conf contains configuration information about how your system 
 nano /etc/ntp.conf
 ```
 
-####### pool.ntp.org
+#### pool.ntp.org
 
 A network administrator might also consider using (or setting up) a pool. A pool is a dynamic collection of networked computers that volunteer to provide highly accurate time via the Network Time Protocol to clients world wide.
 
