@@ -202,5 +202,18 @@ ntpq is a utility for monitoring the status of NTP. Once the NTP daemon has been
 ```sh
  ntpq -p
 ```
+The '-p' option is for print and the '-n' will cause the Host addresses to be returned as IP addresses. the command displays a table containing the remote, refid, st, when, poll,reach, delay, offset,jitter.
 
+###### chrony
+The chrony is another way to implement NTP. 
+
+```sh
+chronyc tracking
+```
+
+Finally, chronyc sources will return information about the NTP servers that are used to
+synchronise time:
+```sh
+chronyc sources
+```
 
