@@ -171,10 +171,10 @@ The system time is compared to network time on a regular schedule. For this to w
 To ensure that the ntpd daemon is running we check its status:
 
 ```sh
-systemctl status ntpd
+systemctl status ntp
 ```
 We might be required to both start and enable ntpd. On most Linux machines this is accomplished with:
 
 ```sh 
-systemctl enable ntpd && systemctl start ntpd
+systemctl enable ntp && systemctl start ntp
 ```
