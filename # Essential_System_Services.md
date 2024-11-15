@@ -178,3 +178,29 @@ We might be required to both start and enable ntpd. On most Linux machines this 
 ```sh 
 systemctl enable ntp && systemctl start ntp
 ```
+
+#### NTP Configuration
+The file /etc/ntp.conf contains configuration information about how your system synchronises with network time. This file can be read and modified using vi or nano.
+
+```sh
+nano /etc/ntp.conf
+```
+
+####### pool.ntp.org
+
+A network administrator might also consider using (or setting up) a pool. A pool is a dynamic collection of networked computers that volunteer to provide highly accurate time via the Network Time Protocol to clients world wide.
+
+###### ntpdate
+In the event where the offset between system and NTP time is greater than 17mins (insane) the ntpd will not make any changes (slewing or step) and the system admin would be required to make manual changes.
+
+- Use ```systemctl stop ntpd``` to stop the runing ntpd
+- Next, use ```ntpdate pool.ntp.org``` to perform an initial one-time synchronisation.
+
+###### ntpq
+ntpq is a utility for monitoring the status of NTP. Once the NTP daemon has been started and configured.
+  
+```sh
+ ntpq -p
+```
+
+
